@@ -2157,3 +2157,11 @@ func (c *config) OemProperties() []string {
 func (c *config) DisableSoongConfigTrace() bool {
 	return Bool(c.productVariables.DisableSoongConfigTrace)
 }
+
+func (c *config) UseDebugArt() bool {
+	if c.productVariables.ArtTargetIncludeDebugBuild != nil {
+		return Bool(c.productVariables.ArtTargetIncludeDebugBuild)
+	}
+
+	return Bool(c.productVariables.Eng)
+}
