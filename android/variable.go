@@ -581,6 +581,8 @@ type ProductVariables struct {
 	DisableSoongConfigTrace *bool `json:",omitempty"`
 
 	ArtTargetIncludeDebugBuild *bool `json:",omitempty"`
+
+	SystemPropFiles []string `json:",omitempty"`
 }
 
 type PartitionQualifiedVariablesType struct {
