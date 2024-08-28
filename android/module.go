@@ -535,6 +535,10 @@ type commonProperties struct {
 
 	// The team (defined by the owner/vendor) who owns the property.
 	Team *string `android:"path"`
+
+	// List of module names that are prevented from being installed when this module gets
+	// installed.
+	Overrides []string
 }
 
 type distProperties struct {
