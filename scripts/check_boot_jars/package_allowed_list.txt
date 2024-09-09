@@ -267,6 +267,9 @@ vendor.sun.*
 com\.nvidia
 com\.nvidia\..*
 
+# Nothing adds
+com.nothing.*
+
 # OPLUS adds
 com\.oplus\..*
 
