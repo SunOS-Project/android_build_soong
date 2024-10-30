@@ -121,6 +121,9 @@ def parse_args():
   config["SunDesc"] = config["BuildDesc"]
   config["SunDevice"] = config["DeviceName"]
 
+  if config["BuildNumber"].startswith("eng."):
+    config["BuildNumber"] = config["DateUtc"]
+
   override_config(config)
 
   append_additional_system_props(args)
