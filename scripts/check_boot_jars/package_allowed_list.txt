@@ -259,6 +259,10 @@ com\.google\.i18n\.phonenumbers
 org\.chromium\.arc
 org\.chromium\.arc\..*
 
+# Sun adds
+org.sun.*
+vendor.sun.*
+
 # NV adds
 com\.nvidia
 com\.nvidia\..*
