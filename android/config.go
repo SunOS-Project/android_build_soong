@@ -1038,7 +1038,7 @@ func (c *config) BuildKeys() string {
 	if defaultCert == "" || defaultCert == filepath.Join(testKeyDir, "testkey") {
 		return "test-keys"
 	}
-	if strings.HasPrefix(defaultCert, "certs/") {
+	if strings.HasPrefix(defaultCert, "vendor/sun-priv/") {
 		return "release-keys"
 	}
 	return "dev-keys"
